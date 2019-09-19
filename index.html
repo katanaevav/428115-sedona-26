@@ -21,7 +21,9 @@
       <h1 class="visability-hidden">Седона, штат Аризона</h1>
 
       <section>
-        <img src="" alt="Добро пожаловать в Седону">
+        <img src="./img/background_photo.jpg" width="1200" height="773" alt="Добро пожаловать в Седону">
+        <img src="./img/intro-welcome.svg" width="460" height="354" alt="Седона">
+        <img src="./img/intro-mask.svg" width="1200" height="60" alt="">
       </section>
       <section>
         <p>Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
@@ -40,7 +42,7 @@
                 Там течет своя жизнь
               </p>
             </div>
-            <img src="" alt="Фото города">
+            <img src="./img/city_view.jpg" width="800" height="256" alt="Фото города">
           </li>
           <li>
             <ul>
@@ -71,7 +73,7 @@
             </ul>
           </li>
           <li>
-            <img src="" alt="Фото моста дьявола">
+            <img src="./img/diablo_bridge.jpg" width="800" height="256 alt="Фото моста дьявола">
             <div>
               <p>Там есть мост дьявола</p>
               <p>- №2 -</p>
@@ -119,7 +121,7 @@
       </section>
 
       <section>
-        <img src="" alt="Карта">
+        <img src="./img/map.jpg" width="1200" height="593" alt="Карта">
       </section>
     </main>
 
@@ -136,8 +138,31 @@
 
     <section>
       <h2 class="visability-hidden">Форма поиска гостиницы</h2>
-      <!-- Здесь будет форма поиска гостиницы-->
-      <button type="button">Найти</button>
+      <form action="https://echo.htmlacademy.ru" method="POST">
+        <p>
+          <label for="start-date">Дата заезда</label>
+          <input id="start-date" type="text" name="start-date" placeholder="24 Апреля 2017">
+        </p>
+        <p>
+          <label for="end-date">Пароль</label>
+          <input id="end-date" type="text" name="end-date" placeholder="4 Июля 2017">
+        </p>
+        <p>
+          <label for="adults">Взрослые:</label>
+          <button type="button">-</button>
+          <input id="adilts" type="text" name="adults" placeholder="2">
+          <button type="button">+</button>
+        </p>
+        <p>
+          <label for="children">Дети:</label>
+          <button type="button">-</button>
+          <input id="children" type="text" name="children" placeholder="0">
+          <button type="button">+</button>
+        </p>
+        <button type="submit">
+          Найти
+        </button>
+      </form>
     </section>
   </body>
 </html>

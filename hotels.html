@@ -22,8 +22,30 @@
 
       <section>
         <h2 class="visability-hidden">Настройки фильтра</h2>
-        <!--Здесь будет форма фильтра-->
-        <button type="button">Показать</button>
+        <form action="https://echo.htmlacademy.ru" method="POST">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <p><input type="checkbox" name="pool" value="pool" checked> Бассейн</p>
+            <p><input type="checkbox" name="parking" value="parking"> Парковка</p>
+            <p><input type="checkbox" name="wifi" value="wifi"> Wi-Fi</p>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <p><input type="checkbox" name="inn" value="inn" checked> Гостиница</p>
+            <p><input type="checkbox" name="hotel" value="hotel" checked> Отель</p>
+            <p><input type="checkbox" name="apartments" value="apartments" checked> Апартаменты</p>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость в сутки (р):</legend>
+            <p>
+              <input id="cost-start" type="text" name="cost-start" placeholder="От 0">
+              <input id="cost-start" type="text" name="cost-start" placeholder="До 3000">
+            </p>
+            <input id="cost-start-range" type="range" name="cost-start-range" min="0" max="3000" value="0">
+            <input id="cost-end-range" type="range" name="cost-end-range" min="100" max="3000" value="3000">
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
       </section>
 
       <section>
