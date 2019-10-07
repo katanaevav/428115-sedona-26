@@ -100,18 +100,23 @@ a {
 }
 
 .welcome-image {
+  position: relative;
   min-height: 509px;
   background-image: url("../img/background_photo.jpg");
-  background-color: #5496bd;
+  background-color: #5496bd;  
   background-repeat: no-repeat;
   background-position-y: -56px;
 }
 
 .welcome-image::after {
-  /* display: block; */
   position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: url("../img/intro-mask.svg");
+  width: 100%;
+
   top: 452px;
-  content: url("../img/intro-mask.svg");
+  content: "";
   background-repeat: no-repeat;
   z-index: 1;
 }
@@ -228,12 +233,19 @@ a {
   margin: 0 auto;
 }
 
+.house,
+.burger,
+.present {
+  position: relative
+}
+
 .house::before {
   position: absolute;
   top: -101px;
   left: 50%;
   margin-left: -38px;
-  content: url("../img/house.svg");
+  content: "";
+  background-image: url("../img/house.svg");
   height: 72px;
   width: 75px;
 }
@@ -243,7 +255,8 @@ a {
   top: -100px;
   left: 50%;
   margin-left: -37px;
-  content: url("../img/burger.svg");
+  content: "";
+  background-image: url("../img/burger.svg");
   height: 70px;
   width: 74px;
 }
@@ -253,7 +266,8 @@ a {
   top: -105px;
   left: 50%;
   margin-left: -32px;
-  content: url("../img/present.svg");
+  content: "";
+  background-image: url("../img/present.svg");
   height: 76px;
   width: 64px;
 }
@@ -293,6 +307,7 @@ a {
 .button:hover,
 .button:focus {
   background-color: #604e43;
+  cursor: pointer;
 }
 
 .button:active {
@@ -314,6 +329,7 @@ a {
 .blue-button:hover,
 .blue-button:focus {
   background-color: #669ec0;
+  cursor: pointer;
 }
 
 .blue-button:active {
@@ -559,6 +575,7 @@ a {
 .calendar:hover path,
 .calendar:focus path {
   fill: #000000;
+  cursor: pointer;
 }
 
 .calendar:active path {
@@ -568,6 +585,7 @@ a {
 .search-form .change-button:hover,
 .search-form .change-button:focus {
   color: #000000;
+  cursor: pointer;
 }
 
 .search-form .change-button:active {
@@ -807,6 +825,7 @@ fieldset legend {
 .filter-button:focus {
   background-color: #ffffff;
   color: #000000;
+  cursor: pointer;
 }
 
 /*------------Filter------------*/
