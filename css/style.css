@@ -838,14 +838,13 @@ fieldset legend {
   font-size: 12px;
   line-height: 18px;
   background-color: #fefefe;
-  
-  padding-left: 73px;
-  padding-right: 73px;
-  min-height: 86px;
-}
+  box-sizing: border-box;
 
-.search-summary-content {
-  padding-top: 8px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 72px;
+  padding-right: 73px;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
