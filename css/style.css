@@ -370,24 +370,23 @@ a {
 
 /*------------Page footer------------*/
 .main-footer {
-  min-height: 120px;
   background-color: rgba(255, 255, 255, 0.9);
   line-height: 26px;
-  
-}
-
-.footer-data {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding-top: 21px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 132px;
+  padding-right: 101px;
 }
 
 .main-page .main-footer {
   position: absolute;
   bottom: 7px;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .hotels-page .main-footer {
@@ -397,12 +396,12 @@ a {
 .footer-hashteg {
   font-size: 21px;  
   font-weight: bold;
-  margin-left: 132px;
 }
 
 .footer-social {
   padding: 0px;
   min-width: 150px;
+  max-width: 30%;
   text-align: center;
   list-style: none;
   display: flex;
@@ -434,7 +433,6 @@ a {
 }
 
 .htmlacademy {
-  margin-right: 101px;
   color: #000000;
 }
 
