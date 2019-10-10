@@ -346,6 +346,7 @@ a {
 
 /*------------hotel search------------*/
 .hotel-search {
+  position: relative;
   background-color: #ffffff;
   text-align: center;
 }
@@ -458,10 +459,54 @@ a {
 
 
 /*------------Modal search form------------*/
+
+@keyframes bounce {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.search-form-hide {
+  display: none;
+}
+
+.search-form-show {
+  transform-origin: top;
+  animation: bounce 0.3s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
 .modal-search {
-  /* display: none; */
   position: absolute;
-  
+
   left: 50%;
   margin-left: -284px;
   background-color: #ffffff;
