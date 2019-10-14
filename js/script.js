@@ -11,6 +11,19 @@ var search_form = document.querySelector(".search-form");
 
 search_popup.classList.add("search-form-hide");
 
+var isStorageSupport = true;
+var storageAdults = "";
+var storageChildren = "";
+
+try {
+  storageAdults = localStorage.getItem("adults");
+  storageChildren = localStorage.getItem("children");
+} 
+
+catch (err) {
+  isStorageSupport = false;
+}
+
 search_button.addEventListener("click", function() {
   if (isShowing) {
     search_popup.classList.add("search-form-hide");
@@ -25,6 +38,15 @@ search_button.addEventListener("click", function() {
     }
     search_popup.classList.add("search-form-show");
     isShowing = true;
+
+    if (storageAdults) {
+      adults.value = storageAdults;
+    }
+
+    if (storageChildren) {
+      children.value = storageChildren;
+    }
+
     start_date.focus();
   }
 });
@@ -38,5 +60,11 @@ search_form.addEventListener("submit", function(evt) {
     search_popup.classList.add("modal-error");
     console.log("Форма поиска гостиницы не заполнена");
     setTimeout(() => search_popup.classList.remove("modal-error"), 800);
+  }
+  else {
+    if (isStorageSupport) {
+      localStorage.setItem("adults", adults.value);
+      localStorage.setItem("children", children.value);
+    }
   }
 });
