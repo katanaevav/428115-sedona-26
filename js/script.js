@@ -59,7 +59,7 @@ search_form.addEventListener("submit", function(evt) {
     }
     search_popup.classList.add("modal-error");
     console.log("Форма поиска гостиницы не заполнена");
-    setTimeout(() => search_popup.classList.remove("modal-error"), 800);
+    setTimeout(function() {search_popup.classList.remove("modal-error")}, 800);
   }
   else {
     if (isStorageSupport) {

@@ -405,7 +405,6 @@ a {
   padding-bottom: 22px;
   padding-left: 132px;
   padding-right: 101px;
-
   z-index: 3;
 }
 
@@ -667,8 +666,6 @@ a {
   color: #88b7d5;
 }
 
-
-
 /*------------Modal search form------------*/
 
 
@@ -677,13 +674,12 @@ a {
 
 
 
-
-
-
-
-
-
 /*--------------------hotels--------------------*/
+
+
+
+
+
 
 
 /*------------Filter------------*/
@@ -909,7 +905,6 @@ fieldset legend {
 
 
 
-
 /*------------Search summary------------*/
 .search-summary {
   font-size: 12px;
@@ -995,11 +990,6 @@ fieldset legend {
 }
 
 /*------------Search summary------------*/
-
-
-
-
-
 
 
 .search-results {
@@ -1098,7 +1088,7 @@ fieldset legend {
 
 .hotels-list .blue-button {
   display: inline-block;
-  margin-right: 6px;
-  padding: 3px 17px;
   vertical-align: middle;
+  margin-right: 6px;
+  padding: 3px 17px;  
 }
