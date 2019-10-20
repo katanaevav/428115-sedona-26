@@ -449,8 +449,13 @@ a {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-left: 28px;
+  justify-content: flex-start;
+  margin-left: 35px;
+}
+
+.footer-social li {
+  margin-right: 6px;
+  /* margin-bottom: 6px; */
 }
 
 .social-button {
