@@ -1,17 +1,17 @@
-var search_button = document.querySelector(".search-button");
-var search_popup = document.querySelector(".modal-search");
+var searchButton = document.querySelector(".search-button");
+var searchPopup = document.querySelector(".modal-search");
 var isShowing = false;
-var start_date = document.querySelector("[name=start-date]");
-var end_date = document.querySelector("[name=end-date]");
+var startDate = document.querySelector("[name=start-date]");
+var endDate = document.querySelector("[name=end-date]");
 var adults = document.querySelector("[name=adults]");
 var children = document.querySelector("[name=children]");
-var search_form = document.querySelector(".search-form");
+var searchForm = document.querySelector(".search-form");
 var isStorageSupport = true;
 var storageAdults = "";
 var storageChildren = "";
 var TIMEOUT = 800;
 
-search_popup.classList.add("search-form-hide");
+searchPopup.classList.add("search-form-hide");
 
 try {
   storageAdults = localStorage.getItem("adults");
@@ -20,19 +20,19 @@ try {
   isStorageSupport = false;
 }
 
-search_button.addEventListener("click", function() {
+searchButton.addEventListener("click", function() {
   if (isShowing) {
-    search_popup.classList.add("search-form-hide");
-    if (search_popup.classList.contains("search-form-show")) {
-      search_popup.classList.remove("search-form-show");
+    searchPopup.classList.add("search-form-hide");
+    if (searchPopup.classList.contains("search-form-show")) {
+      searchPopup.classList.remove("search-form-show");
     }
     isShowing = false;
   }
   else {
-    if (search_popup.classList.contains("search-form-hide")) {
-      search_popup.classList.remove("search-form-hide");
+    if (searchPopup.classList.contains("search-form-hide")) {
+      searchPopup.classList.remove("search-form-hide");
     }
-    search_popup.classList.add("search-form-show");
+    searchPopup.classList.add("search-form-show");
     isShowing = true;
     if (storageAdults) {
       adults.value = storageAdults;
@@ -40,19 +40,19 @@ search_button.addEventListener("click", function() {
     if (storageChildren) {
       children.value = storageChildren;
     }
-    start_date.focus();
+    startDate.focus();
   }
 });
 
-search_form.addEventListener("submit", function(evt) {  
-  if (!start_date.value || !end_date.value || !adults.value || !children.value) {
+searchForm.addEventListener("submit", function(evt) {  
+  if (!startDate.value || !endDate.value || !adults.value || !children.value) {
     evt.preventDefault();
-    if (search_popup.classList.contains("search-form-show")) {
-      search_popup.classList.remove("search-form-show");
+    if (searchPopup.classList.contains("search-form-show")) {
+      searchPopup.classList.remove("search-form-show");
     }
-    search_popup.classList.add("modal-error");
+    searchPopup.classList.add("modal-error");
     console.log("Форма поиска гостиницы не заполнена");
-    setTimeout(function() {search_popup.classList.remove("modal-error")}, TIMEOUT);
+    setTimeout(function() {searchPopup.classList.remove("modal-error")}, TIMEOUT);
   }
   else if (isStorageSupport) {
       localStorage.setItem("adults", adults.value);
