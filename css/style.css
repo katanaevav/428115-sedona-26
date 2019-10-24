@@ -354,7 +354,28 @@ a {
 
 .blue-button:active {
   background-color: #5496bd;
-  color: #94b9d2;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.brown-button {
+  font: inherit;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #766357;
+  border: none;
+}
+
+.brown-button:hover,
+.brown-button:focus {
+  background-color: #604e43;
+  cursor: pointer;
+}
+
+.brown-button:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .hotel-search {
@@ -975,6 +996,8 @@ a {
 }
 
 .hotel-name {
+  display: inline-block;
+  vertical-align: middle;
   margin-bottom: 7px;
   margin-top: -5px;
   margin-left: 29px;
@@ -982,6 +1005,7 @@ a {
   line-height: 26px;
   font-weight: bold;
   color: #000000;
+  cursor: pointer;
 }
 
 .hotel-name:hover,
@@ -1044,7 +1068,8 @@ a {
   min-width: 142px;
 }
 
-.hotels-list .blue-button {
+.hotels-list .blue-button,
+.hotels-list .brown-button {
   display: inline-block;
   vertical-align: middle;
   margin-right: 6px;
