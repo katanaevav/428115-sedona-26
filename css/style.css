@@ -1,7 +1,7 @@
 @font-face {
   font-family: "PT Sans";
   src: url("../fonts/ptsans.woff2") format("woff2"),
-       url("../fonts/ptsans.woff") format("woff");
+    url("../fonts/ptsans.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -9,7 +9,7 @@
 @font-face {
   font-family: "PT Sans";
   src: url("../fonts/ptsansbold.woff2") format("woff2"),
-       url("../fonts/ptsansbold.woff") format("woff");
+    url("../fonts/ptsansbold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
@@ -22,7 +22,7 @@ body {
   line-height: 24px;
   color: #000000;
   text-transform: uppercase;
-  background-color: #f2f2f2; 
+  background-color: #f2f2f2;
 }
 
 .visability-hidden,
@@ -48,8 +48,8 @@ a {
 }
 
 .main-header {
-  position: relative;  
-  min-height: 56px;  
+  position: relative;
+  min-height: 56px;
 }
 
 .main-header-logo {
@@ -61,7 +61,7 @@ a {
 }
 
 .main-navigation {
-  line-height: 26px;  
+  line-height: 26px;
   background-color: #ffffff;
   display: flex;
 }
@@ -89,15 +89,15 @@ a {
   text-align: right;
 }
 
-.left-item + .left-item {
+.left-item+.left-item {
   margin-left: 30px;
 }
 
-.right-item + .right-item {
+.right-item+.right-item {
   margin-left: 30px;
 }
 
-.left-item + .right-item {
+.left-item+.right-item {
   margin-left: auto;
 }
 
@@ -120,14 +120,14 @@ a {
 }
 
 .main-data {
-  position: relative; 
+  position: relative;
 }
 
 .welcome-image {
   position: relative;
   min-height: 509px;
   background-image: url("../img/background_photo.jpg");
-  background-color: #5496bd;  
+  background-color: #5496bd;
   background-repeat: no-repeat;
   background-position-y: -56px;
 }
@@ -190,16 +190,16 @@ a {
   margin: 0px;
 }
 
-.reason-item > div {
+.reason-item>div {
   background-color: #81b3d2;
   color: #ffffff;
 }
 
-.reasons-list-1 > li:nth-child(2) {
+.reasons-list-1>li:nth-child(2) {
   background-color: #ffffff;
 }
 
-.reasons-list-1 > li:nth-child(4) {
+.reasons-list-1>li:nth-child(4) {
   background-color: #eeeeee;
 }
 
@@ -226,7 +226,7 @@ a {
 .item-pic .reason-header {
   margin: 0 auto;
   width: 200px;
-  margin-bottom: 24px; 
+  margin-bottom: 24px;
 }
 
 .item-pic .reason-about {
@@ -397,7 +397,7 @@ a {
   font-size: 21px;
   line-height: 26px;
   min-height: 86px;
-  width: 568px; 
+  width: 568px;
   margin-top: 33px;
 }
 
@@ -405,7 +405,7 @@ a {
   position: relative;
 }
 
-.map iframe{
+.map iframe {
   position: relative;
   z-index: 2;
   border: none;
@@ -444,7 +444,7 @@ a {
 }
 
 .footer-hashteg {
-  font-size: 21px;  
+  font-size: 21px;
   font-weight: bold;
   margin-top: 2px;
 }
@@ -511,16 +511,19 @@ a {
   0% {
     transform: scaleY(0);
   }
+
   100% {
     transform: scaleY(1);
   }
 }
 
 @keyframes shake {
+
   0%,
   100% {
     transform: translateX(0);
   }
+
   10%,
   30%,
   50%,
@@ -528,6 +531,7 @@ a {
   90% {
     transform: translateX(-10px);
   }
+
   20%,
   40%,
   60%,
@@ -711,7 +715,8 @@ a {
   margin: 0;
 }
 
-.checkboxes legend {
+.checkboxes legend,
+.coast legend {
   font-size: 16px;
   font-weight: bold;
 }
@@ -754,27 +759,27 @@ a {
   background-size: 23px 23px;
 }
 
-.filter-checkbox:checked ~ .filter-checkbox-label::before {
+.filter-checkbox:checked~.filter-checkbox-label::before {
   background-image: url(../img/checkbox-on.svg);
   background-size: 27px 23px;
   width: 27px;
   height: 23px;
 }
 
-.filter-checkbox:focus ~ .filter-checkbox-label::before {
+.filter-checkbox:focus~.filter-checkbox-label::before {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
 }
 
-.filter-checkbox:disabled ~ .filter-checkbox-labeld {
+.filter-checkbox:disabled~.filter-checkbox-labeld {
   color: #6a6a6a;
 }
 
-.filter-checkbox:disabled ~ .filter-checkbox-label::before {
+.filter-checkbox:disabled~.filter-checkbox-label::before {
   background-image: url(../img/checkbox-off-disabled.svg);
 }
 
-.filter-checkbox:checked:disabled ~ .filter-checkbox-label::before {
+.filter-checkbox:checked:disabled~.filter-checkbox-label::before {
   background-image: url(../img/checkbox-on-disabled.svg);
 }
 
@@ -879,7 +884,7 @@ a {
   background-color: rgba(255, 255, 255, 0);
   border: 2px solid #ffffff;
   min-height: 36px;
-  min-width: 137px;  
+  min-width: 137px;
   margin-left: 85px;
 }
 
@@ -1073,5 +1078,5 @@ a {
   display: inline-block;
   vertical-align: middle;
   margin-right: 6px;
-  padding: 3px 17px;  
+  padding: 3px 17px;
 }

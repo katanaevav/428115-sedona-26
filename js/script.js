@@ -20,7 +20,7 @@ try {
   isStorageSupport = false;
 }
 
-searchButton.addEventListener("click", function() {
+searchButton.addEventListener("click", function () {
   if (isShowing) {
     searchPopup.classList.add("search-form-hide");
     if (searchPopup.classList.contains("search-form-show")) {
@@ -44,7 +44,7 @@ searchButton.addEventListener("click", function() {
   }
 });
 
-searchForm.addEventListener("submit", function(evt) {  
+searchForm.addEventListener("submit", function (evt) {
   if (!startDate.value || !endDate.value || !adults.value || !children.value) {
     evt.preventDefault();
     if (searchPopup.classList.contains("search-form-show")) {
@@ -52,10 +52,10 @@ searchForm.addEventListener("submit", function(evt) {
     }
     searchPopup.classList.add("modal-error");
     console.log("Форма поиска гостиницы не заполнена");
-    setTimeout(function() {searchPopup.classList.remove("modal-error")}, TIMEOUT);
+    setTimeout(function () { searchPopup.classList.remove("modal-error") }, TIMEOUT);
   }
   else if (isStorageSupport) {
-      localStorage.setItem("adults", adults.value);
-      localStorage.setItem("children", children.value);
+    localStorage.setItem("adults", adults.value);
+    localStorage.setItem("children", children.value);
   }
 });
