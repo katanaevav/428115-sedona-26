@@ -907,7 +907,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: baseline;
+  /* align-items: baseline; */
 }
 
 .summary-header {
@@ -917,20 +917,31 @@ a {
   margin-right: 47px;
 }
 
+.sort-type {
+  margin-top: 27px;
+}
+
 .summary-sort-type,
 .summary-sort-direction {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 27px;
 }
 
 .summary-sort-direction {
   margin-left: auto;
+  margin-top: 23px;
+}
+
+.summary-sort-type li {
+  margin-right: 33px;
 }
 
 .summary-sort-type a {
-  display: inline-block;
-  vertical-align: middle;
+  /* display: inline-block; */
+  /* vertical-align: middle; */
   text-decoration: underline;
   text-decoration-style: dotted;
   color: rgba(0, 0, 0, 0.3);
