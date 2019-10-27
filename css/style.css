@@ -907,7 +907,6 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  /* align-items: baseline; */
 }
 
 .summary-header {
@@ -940,8 +939,6 @@ a {
 }
 
 .summary-sort-type a {
-  /* display: inline-block; */
-  /* vertical-align: middle; */
   text-decoration: underline;
   text-decoration-style: dotted;
   color: rgba(0, 0, 0, 0.3);
